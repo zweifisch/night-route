@@ -1,0 +1,37 @@
+{
+  "main": "router.js",
+  "scripts": {
+    "test": "jest --bail",
+    "doc": "jsdoc -c jsdoc.json koa.js"
+  },
+  "devDependencies": {
+    "jest": "^19.0.2",
+    "jsdoc": "^3.4.3",
+    "jsdoc-strip-async-await": "^0.1.0",
+    "koa": "^2.2.0",
+    "node-fetch": "^1.6.3"
+  },
+  "dependencies": {
+    "koa-compose": "^3.2.1"
+  },
+  "name": "night-route",
+  "description": "- routing without regexp",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zweifisch/night-route.git"
+  },
+  "keywords": [
+    "router",
+    "koa"
+  ],
+  "author": "zf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zweifisch/night-route/issues"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "homepage": "https://github.com/zweifisch/night-route#readme"
+}
