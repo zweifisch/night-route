@@ -15,7 +15,7 @@
     "koa-compose": "^3.2.1"
   },
   "name": "night-route",
-  "description": "- routing without regexp",
+  "description": "fast routing without regexp",
   "version": "0.1.0",
   "repository": {
     "type": "git",

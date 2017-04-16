@@ -36,7 +36,12 @@ exports.Router = class Router extends BaseRouter {
     /**
      * @param {String} method
      * @param {String} path
-     * @param {...Function} middlewares
+     * @param {...Function} [middlewares]
+     * @returns {Router} router
+     *//**
+     * @param {String} method
+     * @param {...Function} [middlewares]
+     * @param {Object.<String, Function>} handlers
      * @returns {Router} router
      */
     route (method, path, ...middlewares) {
