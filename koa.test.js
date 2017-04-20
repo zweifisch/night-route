@@ -63,7 +63,7 @@ test('routing', async () => {
 
     res = await request(server, '/nowhere', { method: 'OPTIONS' })
     expect(res.status).toBe(204)
-    expect(await res.headers.get('allow')).toBe('OPTIONS,GET,PUT')
+    expect(await res.headers.get('allow')).toBe('OPTIONS,GET,HEAD,PUT')
 
     server.close()
 })

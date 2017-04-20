@@ -107,6 +107,9 @@ class Router {
             })
         }
         this.rules.get(path).methods.set(method, metadata)
+        if (method === 'GET' && !this.rules.get(path).methods.get('HEAD')) {
+            this.rules.get(path).methods.set('HEAD', metadata)
+        }
         return this
     }
 
